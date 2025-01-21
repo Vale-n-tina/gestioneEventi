@@ -38,7 +38,7 @@ public class Main {
 				entity.remove(eventoDaEliminare);
 				System.out.println("Evento con ID: " + eventoDaEliminare.getId() + " eliminato");
 			}else{
-				System.out.println("evento con id:" + eventoDaEliminare.getId());
+				System.out.println("evento con id:" + eventoDaEliminare.getId()+ "non trovata");
 			}
 			entity.getTransaction().commit();
 
