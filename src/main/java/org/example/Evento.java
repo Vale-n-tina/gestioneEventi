@@ -10,9 +10,9 @@ public class Evento {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
-	@Column(name="titolo")
+	@Column(name = "titolo")
 	private String titolo;
-	@Column(name="data_evento")
+	@Column(name = "data_evento")
 	private LocalDate dataEvento;
 	@Column(name = "tipo_evento")
 	private String tipoEvento;
@@ -21,7 +21,7 @@ public class Evento {
 	@Column(name = "descrizione")
 	private String descrizione;
 
-	public Evento(){
+	public Evento() {
 
 	}
 
@@ -30,7 +30,7 @@ public class Evento {
 		this.massimoPartecipanti = massimoPartecipanti;
 		this.tipoEvento = tipoEvento;
 		this.titolo = titolo;
-		this.descrizione=descrizione;
+		this.descrizione = descrizione;
 	}
 
 	public long getId() {
